@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+
+
+  root 'demo#index'
+
   get 'example/index'
   get 'demo/index'
   get 'demo/hello'
   get 'demo/other_hello'
   get 'example/other_hello'
-  root 'example#index'
+ 
   get 'demo/baidu'
 
   #default roots, may be gone away in future
