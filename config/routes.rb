@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  #get 'example/index'
-  #get 'demo/index'
-  
+  get 'example/index'
+  get 'demo/index'
+  get 'demo/hello'
+  get 'demo/other_hello'
+  get 'example/other_hello'
   root 'example#index'
+  get 'demo/baidu'
 
   #default roots, may be gone away in future
-  get ':controller(/:action(/:id))'
+  # get ':controller(/:action(/:id))'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

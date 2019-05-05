@@ -1,1 +1,25 @@
-<h1> Hello World!</h1>
+<h1> Hello World from app/views/demo/index.html.erb page!</h1>
+
+<%= puts "Hello world" %>
+<% 1 + 1 %>
+<%= 1 + 1%> <br />
+<h2> Variables Output 1</h2>
+<% target = "World" %> 
+<%= "Hello #{target} "%> <br />
+
+
+<%
+3.times do |n|
+	puts n
+end
+%>
+
+<h2>  Variables Output 2</h2>
+<% 3.times do |n| %>
+<%= n%> <br >
+<%end%>
+
+<h2> Instance Variables Output </h2>
+<% @array.each do |n| %>
+<%= n %> <br />
+<% end %>
