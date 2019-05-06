@@ -1,3 +1,10 @@
 <h1> Hello World from app/views/demo/hello.html.erb page!</h1>
 
 <%= link_to("Index page 2",{:action => 'index'}) %> <br />
+
+
+ID: <%= @id %> <br />
+ID: <%= params[:id] %> <br />
+Curr Page:<%= @page %> <br />
+Next Page: <%= @page.to_i + 1  %> <br />
+Prev Page: <%= @page.to_i - 1 %>

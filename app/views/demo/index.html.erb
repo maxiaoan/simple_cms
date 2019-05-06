@@ -27,4 +27,8 @@ end
 <h1>Links</h1>
 
 <a href="/demo/index"> Hello page 1</a> <br />
-<%= link_to("Hello page 2",{:action => 'hello'}) %> <br />
+<%= link_to("Hello page 2", {:action => 'hello'}) %> <br />
+
+<h1> URL with patameters</h1>
+
+<%= link_to("Hello with parameters",{:action => 'hello', :page => 5, :id => 20}) %> <br />

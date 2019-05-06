@@ -9,10 +9,10 @@ Rails.application.routes.draw do
   get 'demo/other_hello'
   get 'example/other_hello'
  
-  get 'demo/baidu'
+  # get 'demo/baidu'
 
   #default roots, may be gone away in future
-  # get ':controller(/:action(/:id))'
+   # get ':controller(/:action(/:id))'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
