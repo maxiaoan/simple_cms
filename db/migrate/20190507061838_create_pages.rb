@@ -1,5 +1,6 @@
 class CreatePages < ActiveRecord::Migration[5.2]
   def up
+    
     # create_table :pages do |t|
     # 	t.integer "subject_id"
     # 	t.string "name"
@@ -14,7 +15,7 @@ class CreatePages < ActiveRecord::Migration[5.2]
 
  # don't need to drop indexes when dropping the whole tables
   def down 
-  	drop_table :pages
+  	# drop_table :pages
   end
 
 end

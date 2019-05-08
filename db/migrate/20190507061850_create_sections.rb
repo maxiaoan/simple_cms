@@ -8,8 +8,8 @@ class CreateSections < ActiveRecord::Migration[5.2]
     # 	t.string "content_type"
     # 	t.text "content"
     #  	t.timestamps
-    # end
-   	# add_index("sections", "page_id")
+    end
+   	add_index("sections", "page_id")
   end
 
   def down
