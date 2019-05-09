@@ -1,8 +1,8 @@
 class CreateSectionEdits < ActiveRecord::Migration[5.2]
   def up
     create_table :section_edits do |t|
-    	t.integer "admin_user_id"
-    	t.integer "section_id"
+    	t.integer "admin_user_id" #foreign key
+    	t.integer "section_id" #foreign key
     	t.string "summary"
       t.timestamps
     end
