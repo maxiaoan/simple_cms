@@ -1,7 +1,11 @@
 class SubjectsController < ApplicationController
+  
+  layout 'admin'
+
   def index
     @subjects = Subject.sorted # stored definded in /suject.rb
     #render('index')
+     
   end
 
   def show

@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   get 'demo/index'
   get 'demo/hello'
   get 'demo/other_hello'
+  get 'demo/escape_output'
   #get 'example/other_hello'
  
   # get 'demo/baidu'

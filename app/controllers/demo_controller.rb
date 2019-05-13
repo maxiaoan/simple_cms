@@ -23,4 +23,8 @@ class DemoController < ApplicationController
   def baidu
     redirect_to('https:www.baidu.com')
   end
+
+  def escape_output
+
+  end
 end
