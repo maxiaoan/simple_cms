@@ -1,5 +1,6 @@
 <h1> Hello World from app/views/demo/index.html.erb page!</h1>
 
+
 <%= puts "Hello world" %>
 <% 1 + 1 %>
 <%= 1 + 1%> <br />
@@ -32,3 +33,5 @@ end
 <h1> URL with patameters</h1>
 
 <%= link_to("Hello with parameters",{:action => 'hello', :page => 5, :id => 20}) %> <br />
+
+<%= link_to('Roar', '#', :onclick => "jsname('JavaScript'); return true;") %> 
