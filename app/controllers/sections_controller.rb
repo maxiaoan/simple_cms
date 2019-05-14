@@ -3,7 +3,7 @@ class SectionsController < ApplicationController
   layout 'admin'
 
   def index
-      @section = Section.sorted
+      @sections = Section.sorted
     end
 
     def show
@@ -60,7 +60,8 @@ class SectionsController < ApplicationController
     private
 
     def section_params
-      params.require(:section).permit(:page_id, :name, :postion, 
-      :visible, :content_tyoe, :permalink)
+      params.require(:section).permit(:page_id, :name, :position, 
+      :visible, :content_type, :content)
     end
+
   end
