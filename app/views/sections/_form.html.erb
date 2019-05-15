@@ -1,3 +1,4 @@
+<%= error_messages_for(f.object) %>
 <table summary="Section form fields">
       <tr>
         <th>Name</th>
@@ -14,6 +15,10 @@
       <tr>
         <th>Visible</th>
         <td><%= f.check_box(:visible) %></td>
+      </tr>
+      <tr>
+        <th>Created_at</th>
+        <td><%= f.datetime_select(:created_at) %></td>
       </tr>
       <tr>
         <th>Content Type</th>

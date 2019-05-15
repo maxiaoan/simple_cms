@@ -15,10 +15,10 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: rails_user
   password: 1231
-  # mac mysqld.sock file location
-  socket: /tmp/mysql.sock
+  # MacOS mysqld.sock file location
+  #socket: /tmp/mysql.sock
   # ubuntu mysqld.sock file location
-  #socket: /var/run/mysqld/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
