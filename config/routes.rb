@@ -2,6 +2,11 @@ Rails.application.routes.draw do
 
 
   root 'demo#index'
+  get 'access/menu'
+  get 'access/login'
+
+  post 'access/attempt_login'
+  get 'access/logout'
 
   # default there is no delete member
   resources :subjects do
@@ -24,6 +29,7 @@ Rails.application.routes.draw do
 
 
   #get 'example/index'
+  get 'admin', :to => 'access#menu'
   get 'demo/index'
   get 'demo/hello'
   get 'demo/other_hello'
