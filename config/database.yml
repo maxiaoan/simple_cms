@@ -16,9 +16,9 @@ default: &default
   username: rails_user
   password: 1231
   # MacOS mysqld.sock file location
-  #socket: /tmp/mysql.sock
+  socket: /tmp/mysql.sock
   # ubuntu mysqld.sock file location
-  socket: /var/run/mysqld/mysqld.sock
+  #socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
