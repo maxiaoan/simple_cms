@@ -10,7 +10,6 @@ class AccessController < ApplicationController
 
   def login
   	# login form
- 
   end
 
   def attempt_login
@@ -30,17 +29,13 @@ class AccessController < ApplicationController
   		# new flash usage
   		flash.now[:notice] = "Invalid username/password combination."
   		render('login')
-
   	end
   end
-
 
   def logout
   	session[:user_id] = nil
   	flash[:notice] = 'logged out.'
   	redirect_to(access_login_path)
   end
-
-
   
 end

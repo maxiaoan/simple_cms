@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
 
   layout 'admin'
-
+ 
+  # Ex:- scope :active, -> {where(:active => true)}
   before_action :confirm_logged_in
   before_action :find_subject
   before_action :set_page_count, :only => [:new, :create, :edit, :update]
@@ -66,7 +67,7 @@ class PagesController < ApplicationController
   end
 
   def set_page_count
-    @page_count = Page.count
+    @page_count = @subject.pages.count
     if params[:action] == 'new' || params[:action] == 'create'
       @page_count += 1
     end

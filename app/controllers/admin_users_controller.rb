@@ -59,4 +59,5 @@ class AdminUsersController < ApplicationController
   		:password
   		)
   end
+  
 end
