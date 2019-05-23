@@ -37,15 +37,10 @@ Rails.application.routes.draw do
   end
 
 
-  #get 'example/index'
-  get 'admin', :to => 'access#menu'
   get 'demo/index'
   get 'demo/hello'
   get 'demo/other_hello'
   get 'demo/escape_output'
-  #get 'example/other_hello'
- 
-  # get 'demo/baidu'
 
   #default roots, may be gone away in future
    # get ':controller(/:action(/:id))'

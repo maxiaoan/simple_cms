@@ -2,7 +2,9 @@ class Subject < ApplicationRecord
 
 	#one-to-one
 	# has_one :page
-	#one-to-many
+	# one-to-many
+	acts_as_list
+
 	has_many :pages
 	
 	scope :visible, lambda { where(:visible => true) }
