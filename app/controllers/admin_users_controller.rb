@@ -27,8 +27,8 @@ class AdminUsersController < ApplicationController
   end
 
   def update
-  	@admin_user = AdminUser.new(admin_user_params)
-  	if @admin_user.save
+  	@admin_user = AdminUser.find(params[:id])
+  	if @admin_user.update_attributes(admin_user_params)
   		flash[:notice] = 'Admin user updated successfully.'
   		redirect_to(admin_users_path)
   	else
@@ -59,4 +59,5 @@ class AdminUsersController < ApplicationController
   		:password
   		)
   end
+
 end

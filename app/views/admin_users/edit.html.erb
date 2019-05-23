@@ -6,8 +6,7 @@
   <h2>Update Admin User</h2>
 
   <%= form_for(@admin_user) do |f| %>
-
-    <%= render(:partial => 'form', :locals => {:f => f}) %>
+  <%= render(:partial => 'form', :locals => {:f => f}) %>
 
     <div class="form-buttons">
       <%= f.submit("Update Admin User") %>
